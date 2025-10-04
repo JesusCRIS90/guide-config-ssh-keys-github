@@ -1,0 +1,5 @@
+Host <Account-ID> # Could be any name here
+  HostName <HostName> # github.com
+  User git
+  IdentityFile <Path2PrivateKey>
+  AddKeysToAgent yes
