@@ -1,0 +1,1 @@
+I you use the bash script to generate ssh-keys, all keys will be created inside this folder.
