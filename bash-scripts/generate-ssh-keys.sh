@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 fi
 
 NAME="$1"
-KEY_DIR="./keys/$NAME"
+KEY_DIR="../keys/$NAME"
 KEY_FILE="$KEY_DIR/id_ed25519_$NAME"
 KEY_COMMENT="Comment-$NAME"
 

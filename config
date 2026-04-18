@@ -1,0 +1,6 @@
+Host JesusCRIS90-github
+  HostName github.com
+  User git
+  IdentityFile /home/jezworkshop/git-projects/personal/guide-config-ssh-keys-github/keys/jesus-cris90/id_ed25519_jesus-cris90
+  AddKeysToAgent yes
+  IdentitiesOnly yes

@@ -61,3 +61,41 @@ On each repository:
     git config user.name "Your-Github-User-Name"
     git config user.email "Your-Github-User-Email"
 ```
+
+---
+
+# Connect Local Repository with Github via SHH
+
+1. Execute command from this repo:
+
+```make
+make add-ssh-keys
+```
+
+2. First Verification shh-Agent is working fine. Execute:
+
+```make
+make show-ssh-keys
+```
+
+Should must appear a SHA256 code inidicating the shh-key owner.
+
+3. Second Verification shh-Agent is working fine. Execute:
+
+```bash
+ssh -T git@github.com
+```
+
+You should get something like the following message which indicate that your ssh-agent and your github account are connected.
+
+```md
+Hi <user>! You've successfully authenticated...
+```
+
+4. Connect your Local Repository with Github Repository
+
+```bash
+git remote set-url origin git@<YourGithubUser>-github:YourUser/your-repo.git
+```
+
+If everything is fine, your local repo will be connected to your remote repo succesfully!
